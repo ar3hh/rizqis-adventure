@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3fb4f2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Rizqi’s Adventure</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main id="dash">
+  <button id="gear" type="button" aria-label="Settings">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6a.5.5 0 0 0 .1-.6l-2-3.5a.5.5 0 0 0-.6-.2l-2.5 1a7.4 7.4 0 0 0-1.7-1l-.4-2.6a.5.5 0 0 0-.5-.4h-4a.5.5 0 0 0-.5.4l-.4 2.6c-.6.2-1.2.6-1.7 1l-2.5-1a.5.5 0 0 0-.6.2l-2 3.500a.5.5 0 0 0 .1.6L4.600 11a7.600 7.600 0 0 0 0 2l-2.100 1.600a.5.5 0 0 0-.1.6l2 3.500c.1.2.4.3.6.2l2.500-1c.5.4 1.100.8 1.700 1l.4 2.600c0 .2.2.4.5.4h4c.3 0 .5-.2.5-.4l.4-2.600c.6-.2 1.200-.6 1.700-1l2.500 1c.2.1.5 0 .6-.2l2-3.500a.5.5 0 0 0-.1-.6L19.400 13zM12 15.500a3.500 3.500 0 1 1 0-7 3.500 3.500 0 0 1 0 7z"/></svg>
+  </button>
+
+  <header class="hero"><img src="assets/approved-header.png" alt="Rizqi’s Adventure — Let’s play, Rizqi!" draggable="false"></header>
+<section class="city"><nav class="scene-stage" aria-label="Games">
+<img class="scene-art" src="assets/approved-city-menu.png" alt="" draggable="false">
+<button class="card green" type="button" data-game="magic" aria-label="Magic Shape"><img src="assets/icons/magic-approved.png" alt="" draggable="false"></button>
+<button class="card orange" type="button" data-game="animal" aria-label="Animal Discovery"><img src="assets/icons/animal-approved.png" alt="" draggable="false"></button>
+<button class="card purple" type="button" data-game="number" aria-label="Number Adventure"><img src="assets/icons/number-approved.png" alt="" draggable="false"></button>
+</nav></section>
+</main>
+
+<section id="game" class="game" hidden>
+  <button id="home" type="button" aria-label="Home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></svg>
+  </button>
+  <div class="stage">
+    <img id="gameIcon" alt="" draggable="false">
+    <h1 id="gameTitle"></h1>
+    <p>Temporary game screen. Gameplay arrives in a later phase.</p>
+  </div>
+</section>
+
+<section id="settings" class="modal" hidden>
+  <div class="panel" role="dialog" aria-label="Settings preview">
+    <h2>Settings</h2>
+    <p class="tag">Development preview only</p>
+    <p>Parent Settings will be built in a later phase.</p>
+    <button id="closeSettings" type="button">Close</button>
+  </div>
+</section>
+<script src="js/app.js"></script>
+</body>
+</html>
